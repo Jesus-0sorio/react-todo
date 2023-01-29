@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { TaskForm } from "./components/TaskForm";
 import { TasksList } from "./components/TasksList";
-import { TaskState } from "./components/TaskState";
+import { Footer } from "./components/Footer";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -27,6 +27,7 @@ function App() {
     <div className="grid grid-cols-1 my-4 lg:grid-cols-4 xl:grid-cols-4 xl:gap-3 lg:my-0 h-screen">
       <TaskForm addTask={addTask} />
       <TasksList tasks={tasks} deleteTask={deleteTask} />
+      <Footer />
     </div>
   );
 }

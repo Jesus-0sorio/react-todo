@@ -13,7 +13,7 @@ export function TasksList({ tasks, deleteTask }) {
     </>) : <p className="text-3xl text-center md:text-5xl xl:text-7xl">No hay tareas pendientes</p>
   );
 
-  const classListTask = taskPending.length !== 0 ? "sm:col-span-1 md:col-span-3 xl:col-span-3 h-full" : "col-span-3 m-auto"
+  const classListTask = taskPending.length !== 0 ? "row-span-5 sm:col-span-1 md:col-span-3 xl:col-span-3 h-full" : "row-span-5 col-span-3 m-auto"
 
   return <div className={classListTask}>{infoTask}</div>;
 }
