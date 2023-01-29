@@ -24,7 +24,7 @@ function App() {
   }, [tasks]);
 
   return (
-    <div className="grid grid-cols-3 gap-7">
+    <div className="grid grid-cols-4 gap-4 h-screen ">
       <TaskForm addTask={addTask} />
       <TasksList tasks={tasks} deleteTask={deleteTask} />
     </div>
