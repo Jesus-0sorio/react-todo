@@ -23,7 +23,7 @@ export function TaskForm({ addTask }) {
             <input
               type="text"
               id="title"
-              class="border-b-2 block border-gray-300 w-full p-2 my-1.5 focus:outline-0 "
+              className="border-b-2 block border-gray-300 w-full p-2 my-1.5 focus:outline-0 "
               placeholder="Titulo"
               onChange={(e) => setTitle(e.target.value)}
               value={title}
