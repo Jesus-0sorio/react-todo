@@ -1,6 +1,7 @@
 import React from "react";
 
 export function TaskCard({ task, deleteTask }) {
+  const removeTask = () => deleteTask(task.id)
   return (
     <div className=" shadow p-6 border border-gray-200 rounded-lg">
       <h5 className="text-2xl lg:text-3xl p-1">{task.title}</h5>
@@ -13,8 +14,8 @@ export function TaskCard({ task, deleteTask }) {
         readOnly
       />
       <div className="grid grid-cols-2 gap-4">
-        <button className="text-center bg-green-500 rounded-lg text-md md:text-md text-white">Completar</button>
-        <button className="text-center rounded-lg px-3 py-1 bg-red-600 text-white text-md md:text-md" onClick={() => deleteTask(task.id)}>Eliminar</button>
+        <button className="text-center bg-green-500 rounded-lg text-md md:text-md text-white" onClick={removeTask}>Completar</button>
+        <button className="text-center rounded-lg px-3 py-1 bg-red-600 text-white text-md md:text-md" onClick={removeTask}>Eliminar</button>
       </div>
     </div>
   );
