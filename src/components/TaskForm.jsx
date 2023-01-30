@@ -20,26 +20,26 @@ export function TaskForm({ addTask }) {
           Crear Tarea
         </h4>
         <form onSubmit={addFormTask}>
-            <input
-              type="text"
-              id="title"
-              className="border-b-2 block border-gray-300 w-full p-2 my-1.5 focus:outline-0 "
-              placeholder="Titulo"
-              onChange={(e) => setTitle(e.target.value)}
-              value={title}
-              autoFocus
-              required
-            />
-            <textarea
-              name="contenido"
-              id="taskContent"
-              placeholder="Descripcion"
-              onChange={(e) => setContent(e.target.value)}
-              value={content}
-              rows="9"
-              required
-              className="w-full border-b-2 resize-none border-gray-300 p-2 my-1.5 focus:outline-0 "
-            />
+          <input
+            type="text"
+            id="title"
+            className="border-b-2 block border-gray-300 w-full p-2 my-1.5 focus:outline-0 "
+            placeholder="Titulo"
+            onChange={(e) => setTitle(e.target.value)}
+            value={title}
+            autoFocus
+            required
+          />
+          <textarea
+            name="contenido"
+            id="taskContent"
+            placeholder="Descripcion"
+            onChange={(e) => setContent(e.target.value)}
+            value={content}
+            rows="9"
+            required
+            className="w-full border-b-2 resize-none border-gray-300 p-2 my-1.5 focus:outline-0 "
+          />
           <div>
             <button className="block mx-auto mt-1 bg-blue-500 text-white hover:bg-blue-700 w-full py-3 rounded-lg">
               Crear
