@@ -14,7 +14,7 @@ export function TaskForm({ addTask }) {
   };
 
   return (
-    <div className="my-auto mx-5 rounded-lg shadow border-2 p-4 bg-white">
+    <div className="row-span-5 my-auto mx-5 rounded-lg shadow border-2 p-4 bg-white">
       <div className="rounded-md block w-full">
         <h4 className="text-center text-2xl mb-1.5 border-b-2 border-gray-300 pb-3 w-full ">
           Crear Tarea
