@@ -25,7 +25,7 @@ export function TasksList({ tasks, deleteTask }) {
     const classListTask =
     taskPending.length !== 0
       ? "sm:col-span-1 md:col-span-3 xl:col-span-3 h-full"
-      : "col-span-3 m-auto";
+      : "row-span-5 col-span-3 m-auto";
 
   return <div className={classListTask}>{infoTask}</div>;
 }
